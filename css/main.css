@@ -94,7 +94,6 @@ nav ul li a {
   padding: 1.5rem;
   margin: 0.5rem;
   text-align: left;
-  
 }
 
 .sidebar-grid ul li {
@@ -106,7 +105,7 @@ nav ul li a {
   min-height: 80vh;
 }
 
-header h1{
+h1{
  margin-bottom: 1rem;
  text-shadow: 2px 3px rgb(165, 123, 68);
  font-size: 2.5rem; 
@@ -117,7 +116,7 @@ header h1{
 
 /* ANIMACION EN INDEX*/
 
-header h1:hover{
+ h1:hover{
   background-color: rgb(183, 214, 210);
   font-size: 50px;
 }
@@ -138,7 +137,7 @@ nav ul li:hover{
   position: absolute;
   top: 0;
   padding: 20px;
-  color: crimson;
+  color: rgb(219, 115, 18);
 }
 .content-img {
   width: 100%;
