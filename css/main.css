@@ -205,7 +205,17 @@ table, th, th, td {
   object-fit: cover;
   height: 100%;
 }
-/* FOOTER */
+/* contacto bootstrap */
+.bg-footer{
+  background-color: #99a1d1;
+  border: solid rgba(101, 204, 211, 0.589);
+}
+.bg-header{
+  background-color: #99a1d1;
+  border: solid rgba(101, 204, 211, 0.589);
+}
+
+
 
 /*----- MOBILE ----- aqui va el css de MOBILE*/
 @media screen and (max-width: 600px) {
