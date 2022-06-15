@@ -10,6 +10,7 @@
 
 
 /* ESTRUCTURA GRID */
+
 .page-grid {
   display: grid;
   grid-gap: 1em;
@@ -32,6 +33,7 @@
     'footer';
 }
 
+/*MEDIE QUERIES DEKSTOP*/
 @media screen and (min-width: 600px) {
   .page-grid {
     grid-template-columns: 1fr 2fr 1fr;
@@ -39,6 +41,7 @@
       'header header header'
       'content content sidebar'
       'footer footer footer';
+    
   }
 
   .page-grid-contacto {
@@ -52,9 +55,7 @@
 
 .header {
   grid-area: header;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 nav ul {
@@ -157,6 +158,9 @@ nav ul li:hover{
 }
 
 .grid-item {
+  display: flex;
+  flex-direction: column;
+  column-gap: normal;
   padding: 15px;
   font-size: 100%;
   background-color: #e3caab;
@@ -192,7 +196,11 @@ table, th, th, td {
   display: flex;
   justify-content: center;
   width: 75%;
+  height: 75%;
+  color: rgb(206, 28, 28);
+  background-color: rgb(225, 170, 30);
 }
+
 
 
 /* FOOTER */
@@ -201,9 +209,6 @@ table, th, th, td {
   justify-content: space-between;
 }
 
-.footer nav ul li{
- 
-}
 
 .footer-logo-container {
   height: 100px;
@@ -218,8 +223,8 @@ table, th, th, td {
 }
 /* FOOTER */
 
-/*----- MOBILE ----- aqui va el css de MOBILE*/
-@media screen and (max-width: 600px) {
+/*-----MQ MOBILE ----- aqui va el css de MOBILE*/
+@media screen and (max-width: 480px) {
   .header {
     flex-direction: column;
     justify-content: center;
@@ -229,4 +234,13 @@ table, th, th, td {
     margin-top: 2rem;
   }
 }
-/*----- dekstop -----*/
+
+/*----- MQ desktop ----- */
+@media screen and (min-width: 481px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
